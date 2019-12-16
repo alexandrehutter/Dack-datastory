@@ -4,14 +4,11 @@ icon: fa-database
 order: 3
 ---
 
-<p>In this next part, we will talk about the processing that we had to apply to our datasets to get insights ...
-
-  What is the global evolution of the cultivated surface per country from 1995 to 2007?
-  What is the area lost of savanna, shrubland, grassland and forest per country per year?
-  Do we see a correlation between the area lost by ecosystems and the area gain by agriculture?
-  For each selected crop, sojabean, banana, wheat, rice and palm oil, what pourcentage of the total cultivated area do they represent?
-  If there is a correlation between an increase in area cultivated and area lost from all the ecosystems, what would be approximatively the area lost because of the selected crops in particular?
-  Are sojabean, banana, wheat, rice and palm oil meant for exportation and/or importation for each country over the years? Check more precisely for different economical segments and regions.
-  How can we identify short term food trends and what is its impact on the global and country wise area loss?
-
- </p>
+<p>The FAOSTAT data sets are broad in information and a first important part of our investigation was to find the appropriate data sets to precisly answer our problematic. We use 4 data sets from FAOSTAT and one from web scrapping on the Wikipedia article "List of countries and dependencies by area". The 4 data sets give informations by year and areas. Areas can be at different scales, from countries to continents, going to economical segments. They are the following:&nbsp;</p>
+<ul>
+<li>Data on crops, which we reduced to 2 elements of informations, the area harvested and the production quantity for each foodstuff or categories of products.</li>
+<li>Data on export and import, with two different parts, the quantity of products and the monetary value of those exchanges.</li>
+<li>Data on burnt savannas surfaces, for which we only keep the main categories of biomes,&nbsp;Savana, Shrubland and Grassland.</li>
+<li>Data on burnt forests surfaces, really similar to the data set on savannas.&nbsp;</li>
+</ul>
+<p>We will join the two last ones to form a "Biomes" data set that we can compare to the "Area of Crops" one. We also add a column corresponding to the percentage that a given area, loss of biome or gain of cultivated surface, represents in the total surface of a country. To answer questions about link between elements, we calculate a lot of correlations that we present in the analysis.</p>
