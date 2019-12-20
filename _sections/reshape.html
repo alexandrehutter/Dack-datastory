@@ -4,7 +4,7 @@ icon: fa-check
 order: 5
 ---
 
-<h3>Destructivity of the crops</h3>
+<p><h3>Destructivity of the crops</h3></p>
 <div style="text-align: justify">
 <p>Now, the study will shift toward the destructive impact assessment of selected crops on the biome it is being cultivated in. Such impacts depicts the originally raw surface which is transformed for cultivation puroposes. More precisely, a crop will be considered as destructive if its culture is mainly meant for&nbsp;satisfying global food demand compared to local needs. This will allow us to get the impact of global food trends on local landscape. One should however mention that imports followed by exports for specific crop are considered here as originaly produced by the concerned region.&nbsp;</p>
 <p>In order to asses this impact, we considered correlation between export quantity and area loss for a specific geographical area and biome. As the orginal cause for such area loss is absent from our data, a strong correlation would suggest that culturable lands tookover. Hence, the higher is the correlation coefficient, the higher the area&nbsp;loss.</p>
@@ -16,11 +16,15 @@ order: 5
 
 <p><img src="/assets/images/biomes_table.png" alt="Biomes"></p> 
 
-<p><br /> One should however mention the limits of negative crops detection. Since corp culture depends on multiple factors such as: local environement, economical context, geographical situation ... It can quickly become a hard task to state overall negative crops. Being country specific guarantees that the above mentioned are matched for a given crop. </p>
+<p><br /> One should however mention the limits of negative crops detection. Since crop culture depends on multiple factors such as: local environement, economical context, geographical situation ... It can quickly become a hard task to state overall negative crops. Being country specific guarantees that the above mentioned are matched for a given crop. </p>
 
 <p>
-  Another aspect of our work was to try to provide suggestions to countries for replacing destructive crops with other, more sustainable crops. Therefore, we want this time to
-  evaluate the positive impact of a crop. To do this, we thought about using the following features for a given crop :
+  Now that we have a list of crops to avoid at all cost, for four countries (Spain, Ghana, South Africa and Bahrain), we will try to recommend
+  substitutes to cultivate. Those will have to be mainly intended for national use and not exportation. Furthermore, the culture yield
+  (Quantity produced/Quantity harvested) should be as low as possible to avoid the expansion of cultures. A few optimal replacement crop will be
+  listed and left to the countries authorities to chose. To this we added the price per tonne at which the crop is usually sold during exportation.
+  This gives an economic element to our study. Nevertheless, the focus should still remain to prevent further expansion of cultivated area.
+  With all those criteria we give the opportunity for countries authorities to chose among our selection. Here are the features that we used to get the suggestions :
 </p>
 
 <ul>
@@ -33,13 +37,45 @@ order: 5
 <li>
   The economic yield
 </li>
-<li>
-  The destructive impact of the crop
-</li>
 </ul>
 
 <p>
   The quantity which is used locally is simply measured as the percentage of production which is not exported. For its part, the surface yield is measured by the production
-  quantity in tonnes over the area harvested in hectares. This represents the efficiency of the crop culture with respect to the allocated space.
+  quantity in tonnes over the area harvested in hectares. This represents the efficiency of the crop culture with respect to the allocated space. Finally, the economic yield is calculated 
+  by dividing the exported value for a crop (Dollars) by the exported quantity for that crop.
 </p>
+
+<p>
+  Let's now see the result we obtained for the four countries mentionned. First, for spain, the olives arrive first and then close second are dates. 
+  The result are shown in the histogram plot. The crops are listed from the upper one being the best and as we go down on the y-axis the crop becomes 
+  less appropriate. Olives and dates are two typical crops found in Meditarean regions. They are mainly destined for national consumation. We strongly 
+  recommend to replace the exportation of tangerine with the culture of such optimal crops, which have even higher values in dollard at exportation than
+  tangerine. The best crops are represented by the word cloud, with the font size increasing as the crop is better.
+</p>
+
+<p>
+  The same selecton is shown for Ghana. Coconuts and plantains are this time the most optimal crops. Once again those are appropriate crops as they 
+  are tropical fruits. 
+</p>
+
+<p>
+  For the case of Bahrain the selecion we get is really small, this is due to the fact that there are not a lot of crops circulating in this country
+  that were documented by the FAO dataset.The element we desire to replace, watermelon is even in the selection that we propose. This is, nonetheless,
+  still a crop to definetly avoid because of the proven correlation between its exportation and the area of forest burned. The country should
+  therefore focus on dates or bananas.
+</p>
+
+<p>
+  Finally, for south Africa we once again have a big selection. Our top recommendation is composed of quinces, bananas and pineapples.
+</p>
+
+<p>
+  To summarize, we succeded in advising these 4 countries to grow a sustainable crop. Each of them has the choice between a list of crops that we considered "sustainable" by looking at the spacial yield and the local consumption. Depending on how much the country is willing to lose at the advantage of being sustainable, we also ranked the short-listed crops by their  economical yield. The country could then select the crop by balancing economical and sustainable factors. 
+  This model could of course be extended to a larger scale to more countries but we decided to focus on countries that were already producing a "destructive" crop and that they could replace it by one of the products of the list. 
+  Of course, this model is based on only 4 datasets and would need to be investigated further, using other data to guarantee its viability.
+</p>
+
+
+
+
 </div>
