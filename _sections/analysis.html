@@ -3,7 +3,7 @@ title: Analysis
 icon: fa-chart-bar
 order: 4
 ---
-<h3>Observation of the global tendancies&nbsp;</h3>
+<h3>Observation of the global tendancies</h3>
 <div style="text-align: justify">
   <p><br />We will first introduce our data using world maps to find general tendancies to be explored in the rest of the analysis.&nbsp;</p>
   <p>Let's have a first glimps at the major actors in the field of agriculture. The following maps depict the repartition of production and export in the world and give interesting insides on which countries "feed" the world through time. More precisely, for each country, we calculated the percentage that each country represent in the global production of food and display the net production in.</p>
@@ -14,20 +14,22 @@ order: 4
   <p>Here again, there is a clear mondial increase of exports as the quantity exported is higher for all the countries. It can be explained by mondialisation and a general improvment of transportation. Even if top-ranked exporters in America are still the same from 1995 to 2007, we can see major changes in Asia with the emergeance of Russia, China, or Kazakhstan. For Africa, even if Libya lost in rank, it seems like most of the countries slittly increased their part in the global exports. Of course, we need to consider the results carefully to affirm anything as a lot&nbsp; It correlates with our hypothesis on an economy largely based on agriculture as most countries which produce more also export more.&nbsp;</p>
   <p>Now we have an idea of which countries "feed" the world. Would it be possible&nbsp;</p>
   <p>{% include losses.html %}</p>
+  <p>To synthetize the area losses, we see that, for each country, there is an annual loss of the biome present. Forests are destructed mostly in South America (Amazon forest), Malaysia/Indonesia (Borneo forest) and central Africa (Conga Bassin forest). Grassland corresponds to Australia and Kazakhstan. Savanna is found mostly in Africa and shrubland in Australia and Senegal.&nbsp;</p>
+  <p>We had a first insight on what to expect from those data. To try and justify our hypothesis, we will start to link factors together.</p>
 </div>
 
-<h3>Destructivity of the crops&nbsp;</h3>
+<h3>Destructivity of the crops</h3>
 <div style="text-align: justify">
 <p>
   Now, the study will shift a little bit and we will try to identify the destructive impact of selected crops on the biome it is being cultivated in. Such impacts
   depicts the originally raw surface which is transformed for cultivation puroposes. More precisely, a crop will be considered as destructive if its culture is mainly meant for
-  satisfying global food demand compared to local needs. This will allow us to get the impact of global food trends on local landscape. 
+  satisfying global food demand compared to local needs. This will allow us to get the impact of global food trends on local landscape.
 </p>
 
 <p>
   In order to find this impact, we computed the correlation between export quantity and area loss for a specific geographical area and biome and used it as an insightful metric.
   As you can see on the correlation heatmap, the "Forest" biome was considered and it gave us interesting results. The higher is the correlation coefficient, the higher the area
-  loss. As a side note, we used an arbitrary threshold of 0.7 (in absolute value) for the correlation coefficient. Thus, any crop having a correlation over this threshold was 
+  loss. As a side note, we used an arbitrary threshold of 0.7 (in absolute value) for the correlation coefficient. Thus, any crop having a correlation over this threshold was
   considered harmful to the local landscape. Conversely, any value under this threshold was not taken into account. The resulting correlations are shown on the heatmap.
 </p>
 
@@ -42,8 +44,8 @@ Correlation Map Export quantity VS Forest Area Loss by Geographical Regions
   The meaning of that is quite difficult to see, but our investigation resulted in the fact that some crops take a lot of time before giving things to sell or exports. This means
   that the transformation of a biome might not be directly followed by the production of a crop in the same year. The palm trees are a good example of this : it takes around 4 years
   for a palm tree to give oil. However, it is also important to take into account the actual quantity which is exported, as a country could for example produce very few tomatoes and
-  export all of them which would result in a very high correlation coefficient. 
-</p> 
+  export all of them which would result in a very high correlation coefficient.
+</p>
 
 <p>
   Another aspect of our work was to try to provide suggestions to countries for replacing destructive crops with other, more sustainable crops. Therefore, we want this time to
