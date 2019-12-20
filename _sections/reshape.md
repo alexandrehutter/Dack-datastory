@@ -19,8 +19,6 @@ order: 5
   considered harmful to the local landscape. Conversely, any value under this threshold was not taken into account. The resulting correlations are shown on the heatmap.
 </p>
 
-Correlation Map Export quantity VS Forest Area Loss by Geographical Regions
-
 {% include Correlation_between_Forest_Area_Loss_and_Export_by_regions.html %}
 
 <p>
