@@ -1,22 +1,8 @@
 ---
-title: Analysis
-icon: fa-chart-bar
-order: 4
+title: Reshaping the world
+icon: fa-check
+order: 5
 ---
-<h3>Observation of the global tendancies</h3>
-<div style="text-align: justify">
-  <p><br />We will first introduce our data using world maps to find general tendancies to be explored in the rest of the analysis.&nbsp;</p>
-  <p>Let's have a first glimps at the major actors in the field of agriculture. The following maps depict the repartition of production and export in the world and give interesting insides on which countries "feed" the world through time. More precisely, for each country, we calculated the percentage that each country represent in the global production of food and display the net production in.</p>
-  <p>{% include production.html %}</p>
-  <p>First of all, we observe a global augmentation of production that we can explain by the mondial demographic expension (around 6 billions in 1995 and 7 billions in 2007, ONU). In 1995, the major productors are already China and northern America. However, we can see an increase for emerging countries such as Brazil or Maleysia, especially on the island of Borneo, known for losing its primary forests to produce oil palm. We can also see a slite increase in some countries of Africa such as Angola or Egypt. Finally, countries in Europe, on the countrary seem to represent a smaller part of the global production.</p>
-  <p>From those observations, we could suppose that emerging and in-developping countries present a strong demographic expension and that, as a result, need more food for their population. However, it could also be that in order to develop, they focus their economy on agriculture and they export more whereas developped countries expeded their industries or new technologies instead. To confirm one or the other hypothesis, we can look at the part of mondial exports countries reprensent through time.</p>
-  <p>{% include export.html %}</p>
-  <p>Here again, there is a clear mondial increase of exports as the quantity exported is higher for all the countries. It can be explained by mondialisation and a general improvment of transportation. Even if top-ranked exporters in America are still the same from 1995 to 2007, we can see major changes in Asia with the emergeance of Russia, China, or Kazakhstan. For Africa, even if Libya lost in rank, it seems like most of the countries slittly increased their part in the global exports. Of course, we need to consider the results carefully to affirm anything as a lot&nbsp; It correlates with our hypothesis on an economy largely based on agriculture as most countries which produce more also export more.&nbsp;</p>
-  <p>Now we have an idea of which countries "feed" the world. Would it be possible&nbsp;</p>
-  <p>{% include losses.html %}</p>
-  <p>To synthetize the area losses, we see that, for each country, there is an annual loss of the biome present. Forests are destructed mostly in South America (Amazon forest), Malaysia/Indonesia (Borneo forest) and central Africa (Conga Bassin forest). Grassland corresponds to Australia and Kazakhstan. Savanna is found mostly in Africa and shrubland in Australia and Senegal.&nbsp;</p>
-  <p>We had a first insight on what to expect from those data. To try and justify our hypothesis, we will start to link factors together.</p>
-</div>
 
 <h3>Destructivity of the crops</h3>
 <div style="text-align: justify">
@@ -32,8 +18,6 @@ order: 4
   loss. As a side note, we used an arbitrary threshold of 0.7 (in absolute value) for the correlation coefficient. Thus, any crop having a correlation over this threshold was
   considered harmful to the local landscape. Conversely, any value under this threshold was not taken into account. The resulting correlations are shown on the heatmap.
 </p>
-
-Correlation Map Export quantity VS Forest Area Loss by Geographical Regions
 
 {% include Correlation_between_Forest_Area_Loss_and_Export_by_regions.html %}
 
